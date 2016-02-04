@@ -1,5 +1,5 @@
 ldap:
-  build: actualys/ldap
+  image: actualys/ldap
   restart: always
   ports:
     - "389:389"
