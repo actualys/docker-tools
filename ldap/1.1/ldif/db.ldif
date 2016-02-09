@@ -1,0 +1,30 @@
+# Directory Superuser
+
+dn: uid=admin,{DOMAIN}
+uid: admin
+cn: system administrator
+sn: administrator
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+displayName: Super User
+userPassword: {PASSWORD}
+
+# Organization Units
+
+dn: ou=People,{DOMAIN}
+objectClass: top
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Groups,{DOMAIN}
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: ou=Apps,{DOMAIN}
+objectClass: top
+objectClass: organizationalUnit
+ou: Apps
+

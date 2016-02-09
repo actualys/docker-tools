@@ -1,0 +1,13 @@
+ldap:
+  image: actualys/ldap
+  restart: always
+  ports:
+    - "389:389"
+    - "636:636"
+  environment:
+    - LDAP_DOMAIN=my-domain.com
+    - LDAP_PASSWORD=my-password
+  volumes:
+    - ./conf:/etc/ldap/slapd.d
+    - ./data:/var/lib/ldap
+
