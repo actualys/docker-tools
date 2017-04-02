@@ -24,4 +24,5 @@ ldap:
 Login with those credentials :
 
 login : cn=admin,dc=domain,dc=local
+
 password : password
